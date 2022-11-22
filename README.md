@@ -1,6 +1,6 @@
-                                                          pico-ducky
+                                                    pico-ducky
 
-                            Make a cheap but powerful USB Rubber Ducky with a Raspberry Pi Pico
+                        Make a cheap but powerful USB Rubber Ducky with a Raspberry Pi Pico
 
 
 
