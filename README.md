@@ -113,12 +113,7 @@ keycode_win_de.mpy
 Useful links and resources
 
 How to recover your Pico if it becomes corrupted or doesn't boot.
-Reset Instructions 
-
-    Download the reset firmware from flash_nuke.uf2 https://datasheets.raspberrypi.com/soft/flash_nuke.uf2
-    While holding the BOOTSEL button on the Pico, plug in the USB cable to your computer.
-    When the RPI-RP2 drive shows up on your computer, copy the flash_nuke.uf2 file to the Pico
-    After the device reboots, follow the Install instructions here https://github.com/dbisu/pico-ducky/blob/main/README.md
+Reset Instructions https://github.com/ELEET-CLUB/Rubber-Ducky/blob/main/RESET.md
 
 
 Installation Tool
