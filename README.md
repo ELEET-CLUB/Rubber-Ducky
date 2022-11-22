@@ -6,39 +6,42 @@
 
 Install and have your USB Rubber Ducky working in less than 5 minutes.
 
-    Clone the repo to get a local copy of the files. git clone https://github.com/dbisu/pico-ducky.git
+    Clone the repo or download the repo as zip to get a local copy of the files. 
+    
+    git clone https://github.com/dbisu/pico-ducky.git
 
-    Download CircuitPython for the Raspberry Pi Pico. *Updated to 7.0.0
+    Download CircuitPython for the Raspberry Pi Pico. *Updated to 7.0.0  https://circuitpython.org/board/raspberry_pi_pico/ 
 
     Plug the device into a USB port while holding the boot button. It will show up as a removable media device named RPI-RP2.
 
     Copy the downloaded .uf2 file to the root of the Pico (RPI-RP2). The device will reboot and after a second or so, it will reconnect as CIRCUITPY.
 
-    Download adafruit-circuitpython-bundle-7.x-mpy-YYYYMMDD.zip here and extract it outside the device.
+    Download adafruit-circuitpython-bundle-7.x-mpy-YYYYMMDD.zip here https://github.com/adafruit/Adafruit_CircuitPython_Bundle/releases/tag/20221122 and       extract it outside the device.
 
     Navigate to lib in the recently extracted folder and copy adafruit_hid to the lib folder on your Raspberry Pi Pico.
 
     Copy adafruit_debouncer.mpy and adafruit_ticks.mpy to the lib folder on your Raspberry Pi Pico.
 
-    Copy asyncio to the lib folder on your Pico.
+    Copy folder named asyncio to the lib folder on your Pico.
 
     Copy boot.py from your clone to the root of your Pico.
 
-    Copy duckyinpython.py as code.py in the root of the Raspberry Pi Pico, overwriting the previous file.
-    Linux: cp duckyinpython.py </path/to/pico/code.py
+    Copy duckyinpython.py into pico and rename it as code.py in the root of the Raspberry Pi Pico, overwriting the previous file.
+    Linux: cp duckyinpython.py </path/to/pico/code.py>
 
-    Find a script or create your own one using Ducky Script and save it as payload.dd in the Pico.
+    Find a script from https://shop.hak5.org/blogs/payloads/tagged/usb-rubber-ducky or create your own one using Ducky Script and save it as payload.dd in     the Pico.
 
-    Be careful, if your device isn't in setup mode, the device will reboot and after half a second, the script will run.
+    Be careful, if your device isn't in setup mode https://github.com/dbisu/pico-ducky#setup-mode, the device will reboot and after half a second, the         script will run.
 
 
 Setup mode
 
 To edit the payload, enter setup mode by connecting the pin 1 (GP0) to pin 3 (GND), this will stop the pico-ducky from injecting the payload in your own machine. The easiest way to so is by using a jumper wire between those pins as seen bellow.
 
-Setup mode with a jumper
-USB enable/disable mode
+![image](https://user-images.githubusercontent.com/114279584/203319974-be96c8ba-17bb-4d6a-bd8d-1374fd8a1a03.png)
 
+
+USB enable/disable mode
 If you need the pico-ducky to not show up as a USB mass storage device for stealth, follow these instructions.
 Enter setup mode.
 Copy your payload script to the pico-ducky.
@@ -46,13 +49,17 @@ Disconnect the pico from your host PC. Connect a jumper wire between pin 18 (GND
 This will prevent the pico-ducky from showing up as a USB drive when plugged into the target computer.
 Remove the jumper and reconnect to your PC to reprogram. The default mode is USB mass storage enabled.
 
+![image](https://user-images.githubusercontent.com/114279584/203320291-82e591a4-c335-4ff0-a06e-a5da1c0b9bda.png)
+
+
 USB enable/disable mode
 Changing Keyboard Layouts
 
-Copied from Neradoc/Circuitpython_Keyboard_Layouts
+Copied from https://github.com/Neradoc/Circuitpython_Keyboard_Layouts/blob/main/PICODUCKY.md
+
 How to use one of these layouts with the pico-ducky repository.
 
-Go to the latest release page, look if your language is in the list.
+Go to the https://github.com/Neradoc/Circuitpython_Keyboard_Layouts/releases/latest1, look if your language is in the list.
 If your language/layout is in the bundle
 
 Download the py zip, named circuitpython-keyboard-layouts-py-XXXXXXXX.zip
@@ -78,7 +85,9 @@ Don't forget to get the adafruit_hid library.
 
 This is what it should look like if your language is French for example.
 
-CIRCUITPY drive screenshot
+![image](https://user-images.githubusercontent.com/114279584/203321395-c32a0280-ff73-42ed-bde3-32619120f374.png)
+
+
 Modify the pico-ducky code to use your language file:
 
 At the start of the file comment out these lines:
