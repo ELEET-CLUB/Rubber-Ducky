@@ -67,9 +67,7 @@ Download the py zip, named circuitpython-keyboard-layouts-py-XXXXXXXX.zip
 NOTE: You can use the mpy version targetting the version of Circuitpython that is on the device, but on Raspberry Pi Pico you don't need it - they only reduce file size and memory use on load, which the pico has plenty of.
 If your language/layout is not in the bundle
 
-Try the online generator, it should get you a zip file with the bundles for yout language
-
-https://www.neradoc.me/layouts/
+Try the online generator, it should get you a zip file with the bundles for yout language https://www.neradoc.me/layouts/
 Now you have a zip file
 Find your language/layout in the lib directory
 
@@ -81,7 +79,7 @@ Replace LANG with the letters for your language of choice.
     keyboard_layout_win_LANG.py
     keycode_win_LANG.py
 
-Don't forget to get the adafruit_hid library.
+Don't forget to get the adafruit_hid library. https://github.com/adafruit/Adafruit_CircuitPython_HID/releases/latest
 
 This is what it should look like if your language is French for example.
 
@@ -113,24 +111,33 @@ keyboard_layout_win_de.mpy
 keycode_win_de.mpy
 
 Useful links and resources
+
 How to recover your Pico if it becomes corrupted or doesn't boot.
+Reset Instructions 
 
-Reset Instructions
+    Download the reset firmware from flash_nuke.uf2 https://datasheets.raspberrypi.com/soft/flash_nuke.uf2
+    While holding the BOOTSEL button on the Pico, plug in the USB cable to your computer.
+    When the RPI-RP2 drive shows up on your computer, copy the flash_nuke.uf2 file to the Pico
+    After the device reboots, follow the Install instructions here https://github.com/dbisu/pico-ducky/blob/main/README.md
+
+
 Installation Tool
+raspberrypi5621 https://github.com/raspberrypi5621 Created a tool to convert a blank RPi Pico to a ducky.
+You can find the tool here https://github.com/raspberrypi5621/pyducky
 
-raspberrypi5621 Created a tool to convert a blank RPi Pico to a ducky.
-You can find the tool here
+
+
 Docs
 
-CircuitPython
+CircuitPython https://circuitpython.readthedocs.io/en/6.3.x/README.html
+CircuitPython HID https://learn.adafruit.com/circuitpython-essentials/circuitpython-hid-keyboard-and-mouse
+Ducky Script https://shop.hak5.org/blogs/payloads (choose device as rubber ducky and search for the attack you need in categoey)
 
-CircuitPython HID
 
-Ducky Script
 Video tutorials
 
-pico-ducky tutorial by NetworkChuck
+pico-ducky tutorial by NetworkChuck https://www.youtube.com/watch?v=e_f9p-_JWZw
 
-USB Rubber Ducky playlist by Hak5
+USB Rubber Ducky playlist by Hak5 https://www.youtube.com/playlist?list=PLW5y1tjAOzI0YaJslcjcI4zKI366tMBYk
 
-CircuitPython tutorial on the Raspberry Pi Pico by DroneBot Workshop
+CircuitPython tutorial on the Raspberry Pi Pico by DroneBot Workshop https://www.youtube.com/watch?v=07vG-_CcDG0
