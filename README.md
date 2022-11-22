@@ -27,7 +27,7 @@ Install and have your USB Rubber Ducky working in less than 5 minutes.
     Copy duckyinpython.py as code.py in the root of the Raspberry Pi Pico, overwriting the previous file.
     Linux: cp duckyinpython.py </path/to/pico/code.py
 
-    Find a script here or create your own one using Ducky Script and save it as payload.dd in the Pico.
+    Find a script or create your own one using Ducky Script and save it as payload.dd in the Pico.
 
     Be careful, if your device isn't in setup mode, the device will reboot and after half a second, the script will run.
 
