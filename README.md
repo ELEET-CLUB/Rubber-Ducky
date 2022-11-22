@@ -24,9 +24,9 @@ Install and have your USB Rubber Ducky working in less than 5 minutes.
 
     Copy folder named asyncio to the lib folder on your Pico.
 
-    Copy boot.py from your clone to the root of your Pico.
+    Copy boot.py from ther file you cloned or the zip you downloaded to the root of your Pico.
 
-    Copy duckyinpython.py into pico and rename it as code.py in the root of the Raspberry Pi Pico, overwriting the previous file.
+    Copy duckyinpython.py from cloned repo or downloaded file into pico and rename it as code.py in the root of the Raspberry Pi Pico, overwriting the         previous file.
     Linux: cp duckyinpython.py </path/to/pico/code.py>
 
     Find a script from https://shop.hak5.org/blogs/payloads/tagged/usb-rubber-ducky or create your own one using Ducky Script and save it as payload.dd in     the Pico.
